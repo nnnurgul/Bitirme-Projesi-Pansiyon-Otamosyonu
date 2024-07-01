@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7D17A92-7A58-42E6-829E-939189A0E4CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bahar_Pansiyon_4</RootNamespace>
+    <AssemblyName>Bahar Pansiyon 4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaharPansiyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BaharPansiyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="faturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="faturalar.Designer.cs">
+      <DependentUpon>faturalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaForm.Designer.cs">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMüsteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMüsteriler.Designer.cs">
+      <DependentUpon>FrmMüsteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmodalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmodalar.Designer.cs">
+      <DependentUpon>frmodalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmyenimusterics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmyenimusterics.Designer.cs">
+      <DependentUpon>Frmyenimusterics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gelirgider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gelirgider.Designer.cs">
+      <DependentUpon>gelirgider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PansiyonnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PansiyonnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PansiyonnDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PansiyonnDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="stoklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stoklar.Designer.cs">
+      <DependentUpon>stoklar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yardim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yardim.Designer.cs">
+      <DependentUpon>yardim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="çalışanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="çalışanlar.Designer.cs">
+      <DependentUpon>çalışanlar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="faturalar.resx">
+      <DependentUpon>faturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaForm.resx">
+      <DependentUpon>FrmAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMüsteriler.resx">
+      <DependentUpon>FrmMüsteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmodalar.resx">
+      <DependentUpon>frmodalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmyenimusterics.resx">
+      <DependentUpon>Frmyenimusterics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gelirgider.resx">
+      <DependentUpon>gelirgider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="stoklar.resx">
+      <DependentUpon>stoklar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yardim.resx">
+      <DependentUpon>yardim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="çalışanlar.resx">
+      <DependentUpon>çalışanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BaharPansiyonDataSet.xsc">
+      <DependentUpon>BaharPansiyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BaharPansiyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BaharPansiyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BaharPansiyonDataSet.xss">
+      <DependentUpon>BaharPansiyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PansiyonnDataSet.xsc">
+      <DependentUpon>PansiyonnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PansiyonnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PansiyonnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PansiyonnDataSet.xss">
+      <DependentUpon>PansiyonnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PansiyonnDataSet1.xsc">
+      <DependentUpon>PansiyonnDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PansiyonnDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PansiyonnDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PansiyonnDataSet1.xss">
+      <DependentUpon>PansiyonnDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bc7522fa-b9bb-44e4-b401-2fce6affd222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pansiyonn.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\check.png" />
+    <None Include="Resources\otelodaaa.jpg" />
+    <None Include="Resources\otelodaa2.jpeg" />
+    <None Include="Resources\otelodaa1.jpeg" />
+    <None Include="Resources\cross %281%29.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\box.png" />
+    <None Include="Resources\calendar-lines.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\users-alt.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\apps.png" />
+    <None Include="Resources\checkbox.png" />
+    <None Include="Resources\otelodaa.jpeg" />
+    <None Include="Resources\oteloda.jpg" />
+    <None Include="Resources\pnsıyn.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
